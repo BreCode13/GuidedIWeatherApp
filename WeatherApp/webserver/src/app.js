@@ -28,11 +28,11 @@ app.get('/about', (req, res) => {
     })
 })
 
-app.get('/help', (req, res) => {
-    res.render('help', {
-        helpText: 'This is some helpful text.'
-    })
-})
+// app.get('/help', (req, res) => {
+//     res.render('help', {
+//         helpText: 'This is some helpful text.'
+//     })
+// })
 
 app.get('/weather', (req, res) => {
     res.send({
@@ -41,8 +41,8 @@ app.get('/weather', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('Server is up on port 3000.')
+app.listen(4000, () => {
+    console.log('Server is up on port 4000.')
 })
 
 
